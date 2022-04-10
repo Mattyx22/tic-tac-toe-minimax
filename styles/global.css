@@ -1,0 +1,94 @@
+body{
+    background: #0052d4; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0052d4, #4364f7, #6fb1fc); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.game {
+    position: relative;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 25px;
+    width: 600px;
+    height: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.game h1 {
+    font-size: 36px;
+}
+
+.game p {
+    font-size: 26px;
+}
+
+.btn {
+    color: white;
+    background: #396afc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #396afc, #2948ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #396afc, #2948ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 10px;
+    font-size: 23px;
+    box-shadow: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    width: 150px;
+    border: 0;
+}
+
+.btn-reset {
+    background: #56ccf2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56ccf2, #2f80ed); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #56ccf2, #2f80ed); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: auto;
+}
+
+#board {
+    --gridSizeCSS;
+
+    display: grid;
+    grid-template-columns: repeat(var(--gridSizeCSS), auto);
+    width: 318px;
+    margin: 50px auto;
+    height: 306px;
+    align-content: center;
+    justify-content: center;
+}
+
+#board div {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px #333333;
+    border: 1px solid #333333;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
+
+.humanWin {
+    background: #00b09b; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00b09b, #96c93d); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00b09b, #96c93d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.aiWin {
+    background: #ff416c; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff416c, #ff4b2b); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff416c, #ff4b2b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
